@@ -1,15 +1,22 @@
 body {
     margin: 0;
+    /* background-image: url(../public/texture2.png); */
+    background-color: rgb(228, 228, 228);
 }
 
 a {
-    color: white;
+    color: black;
     font-weight: bold;
     text-decoration: none;
     list-style-type: none;
 }
 
 h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+h2 {
     margin: 0;
     font-size: 32px;
 }
@@ -22,61 +29,65 @@ h1 {
     align-items: center;
 
     height: 100px;
-    background-image: url(../public/texture1.png);
+    background-color: whitesmoke;
 
-    border-bottom: 3px solid;
+    box-shadow: 0 10px 6px 0 lightgray;
 }
 
 #name {
-    margin-left: 3%;
-    color: white;
+    margin-left: 5%;
+    color: black;
 }
 
 .nav-tabs {
     display: flex;
+
     align-items: flex-end;
-    margin-right: 3%;
+    margin-right: 5%;
 
     height: 100%;
 }
 
 .nav-item {
     display: flex;
-    padding: 0 25px 0 25px;
-    position: relative;
+    padding: 0 35px 0 35px;
 
-    height: 65%;
+    height: 35%;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to top, #ffffffa9, transparent);
-    background-size: 100% 20%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    transition: background 0.5s ease-in-out;
-    
-    border-left: 4px solid;
-    border-image-source: linear-gradient(to top, #918672, transparent);
-    border-image-slice: 1;
 }
 
 .nav-item:has(.active) {
-        background: url(../public/particles.gif) linear-gradient(to top, #ffffffa9, transparent) !important;
-        
-        background-size: 100% 75% !important;
-        background-repeat: no-repeat !important;
-        background-position: bottom !important;
+    box-shadow: 0 10px 6px 0 lightgray;
 }
 
 .nav-item:hover {
-    background: linear-gradient(to top, #ffffffa9, transparent);
-    background-size: 100% 70%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    transition: background 0.5s ease-in-out;
+    box-shadow: 0 10px 6px 0 lightgray;
 }
 
-.nav-item:last-child {
-    border-right: 4px solid;
-    border-image-source: linear-gradient(to top, #918672, transparent);
-    border-image-slice: 1;
-  }
+
+/* ------------------------------ */
+
+.content-title {
+    margin: 5% 0 0 3%;
+    padding: 2%;
+
+    width: 93%;
+    color: white;
+    background: gray;
+    
+    border-radius: 5px 0 0 5px;
+}
+
+.content-body {
+    margin: 0 5% 0 10%;
+    padding: 25px;
+    min-height: 300px;
+
+    background-color: whitesmoke;
+    box-shadow: inset 0 10px 6px 0 lightgray;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.content-div p {}
