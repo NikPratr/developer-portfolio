@@ -1,7 +1,11 @@
+:root {
+    --Primary: #616B80;
+    --Secondary: gray;
+  }
+
 body {
     margin: 0;
     /* background-image: url(../public/texture2.png); */
-    background-color: rgb(228, 228, 228);
 }
 
 a {
@@ -29,7 +33,7 @@ h2 {
     align-items: center;
 
     height: 100px;
-    background-color: whitesmoke;
+    background-color: var(--Primary);
 
     box-shadow: 0 10px 6px 0 lightgray;
 }
@@ -37,6 +41,7 @@ h2 {
 #name {
     margin-left: 5%;
     color: black;
+    white-space: nowrap;
 }
 
 .nav-tabs {
@@ -58,11 +63,11 @@ h2 {
 }
 
 .nav-item:has(.active) {
-    box-shadow: 0 10px 6px 0 lightgray;
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 .nav-item:hover {
-    box-shadow: 0 10px 6px 0 lightgray;
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -74,7 +79,7 @@ h2 {
 
     width: 93%;
     color: white;
-    background: gray;
+    background: var(--Secondary);
     
     border-radius: 5px 0 0 5px;
 }
