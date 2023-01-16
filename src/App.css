@@ -5,7 +5,6 @@
 
 body {
     margin: 0;
-    /* background-image: url(../public/texture2.png); */
 }
 
 a {
@@ -86,10 +85,10 @@ h4 {
 /* ------------------------------ */
 
 .content-title {
-    margin: 5% 0 0 3%;
+    margin: 5% 0 0 4%;
     padding: 2%;
 
-    width: 93%;
+    width: 92%;
     color: white;
     background: var(--Secondary);
     
@@ -161,4 +160,38 @@ h4 {
     transition-delay: 0.15s;
     transform: translateX(25px);
     opacity: 1;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin: -2.5% auto;
+
+    padding: 10px;
+    height: fit-content;
+    width: 350px;
+    background-color: whitesmoke;
+    box-shadow: inset 2px 5px 3px 0 lightgray;
+
+    border-radius: 100px;
+}
+
+#profile-picture {
+    height: 75px;
+}
+
+#github {
+    height: 75px;
+}
+
+#github:hover {
+    cursor: pointer;
+}
+
+#linkedin {
+    height: 75px;
+}
+
+#linkedin:hover {
+    cursor: pointer;
 }

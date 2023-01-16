@@ -4,7 +4,7 @@ import two from '../../images/image-2.png';
 import three from '../../images/image-3.png';
 import four from '../../images/image-4.png';
 
-export default function About() {
+export default function Portfolio() {
   return (
     <div>
 

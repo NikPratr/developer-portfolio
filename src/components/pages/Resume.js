@@ -1,10 +1,8 @@
 import React from 'react';
 
-export default function Contact() {
+export default function Resume() {
   return (
     <div>
-
-      <div>
         <p className='content-body'>
           Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
           molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
@@ -18,7 +16,6 @@ export default function Contact() {
           conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
           rhoncus. Etiam vel condimentum magna, quis tempor nulla.
         </p>
-      </div>
     </div>
   );
 }

@@ -1,10 +1,8 @@
 import React from 'react';
 
-export default function Blog() {
+export default function Contact() {
   return (
     <div>
-
-      <div>
         <p className='content-body'>
           Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
           Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
@@ -20,7 +18,6 @@ export default function Blog() {
           bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
           est ligula suscipit velit, sed bibendum turpis dui in sapien.
         </p>
-      </div>
     </div>
   );
 }

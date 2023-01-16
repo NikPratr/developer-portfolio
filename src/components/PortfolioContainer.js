@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+
 import NavTabs from './NavTabs';
 import Header from './Header';
+import Footer from './Footer';
+
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
@@ -16,6 +19,7 @@ export default function PortfolioContainer() {
         <div>
           <Header title={currentPage}/>
           <Resume />
+          <Footer />
         </div>
       )
     }
@@ -24,6 +28,7 @@ export default function PortfolioContainer() {
         <div>
           <Header title={currentPage + ' Me'}/>
           <Contact />
+          <Footer />
         </div>
       )
     }
@@ -32,6 +37,7 @@ export default function PortfolioContainer() {
         <div>
           <Header title={currentPage}/>
           <Portfolio />
+          <Footer />
         </div>
       )
     }
@@ -39,6 +45,7 @@ export default function PortfolioContainer() {
       <div>
         <Header title={currentPage + ' Me'}/>
         <About />
+        <Footer />
       </div>
     )
   };

@@ -1,9 +1,8 @@
 import React from 'react';
 
-export default function Home() {
+export default function About() {
   return (
     <div>
-      <div>
         <p className='content-body'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
           velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
@@ -16,13 +15,6 @@ export default function Home() {
           vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
           fames ac ante ipsum primis in faucibus.
         </p>
-      </div>
-
-      {/* <div className='content-body'>
-
-      </div> */}
-
-
     </div>
   );
 }
