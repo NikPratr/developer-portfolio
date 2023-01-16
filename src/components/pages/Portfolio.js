@@ -7,9 +7,6 @@ import four from '../../images/image-4.png';
 export default function About() {
   return (
     <div>
-      <div className='content-title'>
-        <h1>Portfolio</h1>
-      </div>
 
       <div>
         <p className='content-body'>
