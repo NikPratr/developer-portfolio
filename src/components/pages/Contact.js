@@ -1,23 +1,80 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+// /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 export default function Contact() {
+  const [formObject, setFormObject] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const [alertText, setAlertText] = useState('');
+
+  const handleFormSubmit = () => {
+    alert('You submited a form');
+  };
+
+  const handleInput = (event) => {
+    const { name, value } = event.target;
+    setFormObject(formObject => ({
+      formObject,
+      [name]: value
+    }));
+  };
+
+  const updateAlert = (event) => {
+    if(event.target.value.length === 0) {
+      setAlertText(event.target.name + ' is required');
+    } else if (event.target.value.search(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)) {
+      setAlertText('The email you entered is invalid')
+    }
+  };
+
   return (
     <div>
-        <p className='content-body'>
-          Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-          Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-          dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-          sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-          sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-          vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-          libero. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-          lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-          in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-          bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-          est ligula suscipit velit, sed bibendum turpis dui in sapien.
-        </p>
+      <form className='content-body' onSubmit={handleFormSubmit}>
+        <label for='Name'>Name:</label>
+        <br />
+        <input
+          type='name'
+          id='name-input'
+          name='Name'
+          onChange={handleInput}
+          onBlur={updateAlert}>
+        </input>
+
+        <br />
+        <br />
+
+        <label for='Email'>Email:</label>
+        <br />
+        <input
+          type='email'
+          id='email-input'
+          name='Email'
+          onChange={handleInput}
+          onBlur={updateAlert}>
+        </input>
+
+        <br />
+        <br />
+
+        <label for='Message'>Message:</label>
+        <br />
+        <textarea
+          type='message'
+          id='message-input'
+          name='Message'
+          onChange={handleInput}
+          onBlur={updateAlert}>
+        </textarea>
+
+        <p id='alert'>{alertText}</p>
+
+
+        <button type='submit' id='submit-button'>Submit</button>
+      </form>
     </div>
   );
 }

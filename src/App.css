@@ -34,7 +34,12 @@ h4 {
     font-size: 18px;
 }
 
-/* ------------------------------ */
+input {
+    width: 200px;
+}
+
+
+/* ---------- Nav bar ---------- */
 
 #nav{
     display: flex;
@@ -82,9 +87,11 @@ h4 {
 }
 
 
-/* ------------------------------ */
+/* ---------- Page CSS ---------- */
 
+/* header */
 .content-title {
+    display: flex;
     margin: 5% 0 0 4%;
     padding: 2%;
 
@@ -95,6 +102,12 @@ h4 {
     border-radius: 5px 0 0 5px;
 }
 
+.content-title img {
+    margin-left: 25px;
+    height: 50px;
+}
+
+/* body */
 .content-body {
     margin: 0 5% 5% 10%;
     padding: 25px;
@@ -109,7 +122,9 @@ h4 {
 .content-body:not(:first-child) {
     border-radius: 10px;
     padding: 0px;
-}  
+}
+
+/* ---------- Portfolio and Projects ---------- */
 
 #portfolio-projects {
     display: flex;
@@ -148,6 +163,7 @@ h4 {
 }
 
 .project-image:hover {
+    cursor: pointer;
     filter: opacity(.4);
 }
 
@@ -161,6 +177,40 @@ h4 {
     transform: translateX(25px);
     opacity: 1;
 }
+
+/* ---------- Contact ---------- */
+
+#message-input {
+    width: 75%;
+    max-width: 99%;
+    height: 100px;
+}
+
+#submit-button {
+    height: 30px;
+    width: 90px;
+    background-color: var(--Primary);
+
+    border-radius: 5px;
+
+    box-shadow:
+    2px 3px 4px rgba(0, 0, 0, 0.5),
+    inset -1px -2px 1px rgba(0, 0, 0, 0.5);
+    
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    box-shadow: none;
+}
+
+#submit-button:active {
+    box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Footer ---------- */
 
 #footer {
     display: flex;
@@ -182,16 +232,28 @@ h4 {
 
 #github {
     height: 75px;
+    background-color: whitesmoke;
+    
+    border-radius: 50%;
+    
+    transition: 0.15s ease-in-out;
 }
 
 #github:hover {
+    filter: invert(1);
     cursor: pointer;
 }
 
 #linkedin {
     height: 75px;
+    background-color: whitesmoke;
+    
+    border-radius: 50%;
+    
+    transition: 0.15s ease-in-out;
 }
 
 #linkedin:hover {
+    filter: invert(1);
     cursor: pointer;
 }

@@ -17,7 +17,9 @@ export default function PortfolioContainer() {
     if (currentPage === 'Resume') {
       return (
         <div>
-          <Header title={currentPage}/>
+          <Header
+          title={currentPage}
+          picture={false}/>
           <Resume />
           <Footer />
         </div>
@@ -26,7 +28,9 @@ export default function PortfolioContainer() {
     if (currentPage === 'Contact') {
       return (
         <div>
-          <Header title={currentPage + ' Me'}/>
+          <Header
+          title={currentPage + ' Me'}
+          picture={false}/>
           <Contact />
           <Footer />
         </div>
@@ -35,7 +39,9 @@ export default function PortfolioContainer() {
     if (currentPage === 'Portfolio') {
       return (
         <div>
-          <Header title={currentPage}/>
+          <Header
+          title={currentPage}
+          picture={false}/>
           <Portfolio />
           <Footer />
         </div>
@@ -43,7 +49,9 @@ export default function PortfolioContainer() {
     }
     return (
       <div>
-        <Header title={currentPage + ' Me'}/>
+        <Header
+        title={currentPage + ' Me'}
+        picture={true}/>
         <About />
         <Footer />
       </div>

@@ -14,7 +14,8 @@ export default function Resume() {
           ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
           dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
           conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-          rhoncus. Etiam vel condimentum magna, quis tempor nulla.
+          rhoncus. Etiam vel condimentum magna, quis tempor nulla. And this would
+          a <span style={{color: 'blue', textDecoration: 'underline', cursor: 'pointer' }} onClick={() => alert("Resume")}>link</span> to my resume
         </p>
     </div>
   );
