@@ -7,6 +7,24 @@ body {
     margin: 0;
 }
 
+button {
+    margin-top: 50px;
+
+    height: 35px;
+    width: 150px;
+    background-color: white;
+
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 10px 6px 0 lightgray;
+
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
 a {
     color: black;
     font-weight: bold;
@@ -61,6 +79,10 @@ form {
     margin-left: 5%;
     color: black;
     white-space: nowrap;
+}
+
+#name {
+    cursor: pointer;
 }
 
 .nav-tabs {
@@ -267,22 +289,109 @@ input {
     display: none;
 }
 
-#submit-button {
-    margin-top: 50px;
+/* ---------- Resume ---------- */
 
-    height: 35px;
-    width: 150px;
-    background-color: white;
-
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 10px 6px 0 lightgray;
-
-    cursor: pointer;
+#resume-container {
+    position: relative;
 }
 
-#submit-button:active {
+#resume-button {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    margin: 0;
+    z-index: 1;
+}
+
+#resume-button:active {
     box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.resume-section {
+    display: flex;
+    margin-top: 3px;
+}
+
+.resume-section > h3 {
+    height: 100%;
+    width: 120px;
+}
+
+.resume-section > div {
+    width: calc(100% - 120px);
+}
+
+.resume-section > div > p {
+    margin-left: 1.5em;
+}
+
+.resume-section a {
+    color: blue;
+    font-weight: initial;
+    text-decoration: underline;
+}
+
+#resume-container h1 {
+    position: relative;
+    font-size: 2.5em;
+}
+
+#resume-container h1::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: black;
+}
+
+#resume-container h2 {
+    position: relative;
+
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#resume-container h2::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#resume-container h3 {
+    font-size: 1.075em;
+    font-weight: bold;
+}
+
+#resume-container h4 {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#resume-container h5 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#resume-container h6 {
+    margin: -15px 0 0 0;
+
+    text-align: center;
+    font-size: .85em;
+    color: gray;
+}
+
+#resume-container p {
+    font-size: 1em;
 }
 
 /* ---------- Footer ---------- */

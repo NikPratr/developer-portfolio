@@ -30,7 +30,7 @@ export default function Portfolio() {
           title='Text Editor PWA'
           picture={textEditor}
           description='This project is a PWA uses service workers, a web app manifest, and data caching strategies.'
-          github='https://github.com/NikPratr/mongo-social-network-api'
+          github='https://github.com/NikPratr/text-editor-pwa'
           deployment={'https://blooming-plains-09501.herokuapp.com'}
           id={3}
           />
