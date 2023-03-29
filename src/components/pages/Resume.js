@@ -31,6 +31,10 @@ export default function Resume() {
         </p>
         <br />
 
+        <p style={{textIndent: '0px'}}>Github: <a href='https://github.com/NikPratr'>https://github.com/NikPratr</a></p>
+        <p style={{textIndent: '0px'}}>LinkIn: <a href='https://www.linkedin.com/in/nick-prater-62b38b246'>https://www.linkedin.com/in/nick-prater-62b38b246</a></p>
+        <br />
+        
         <h2>Education</h2>
 
         <div className='resume-section'>

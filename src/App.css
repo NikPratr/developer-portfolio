@@ -1,7 +1,22 @@
 :root {
     --Primary: #616B80;
     --Secondary: gray;
-  }
+}
+
+@font-face {
+    font-family: 'karla';
+    src: url('./fonts/karla.ttf');
+}
+
+@font-face {
+    font-family: 'fasthand';
+    src: url('./fonts/fasthand.ttf');
+}
+
+@font-face {
+    font-family: 'comfortaa';
+    src: url('./fonts/comfortaa.ttf');
+}
 
 body {
     margin: 0;
@@ -30,31 +45,43 @@ a {
     font-weight: bold;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'karla';
+
     cursor: pointer;
 }
 
 h1 {
     margin: 0;
+    
+    font-family: 'comfortaa';
     font-size: 45px;
 }
 
 h2 {
     margin: 0;
+    
+    font-family: 'comfortaa';
     font-size: 32px;
 }
 
 h3 {
     margin: 0;
+    
+    font-family: 'comfortaa';
     font-size: 24px;
 }
 
 h4 {
     margin: 0;
+    
+    font-family: 'karla';
     font-size: 18px;
 }
 
 p {
     margin: 0;
+    
+    font-family: 'karla';
 }
 
 form {
@@ -78,12 +105,13 @@ form {
 #name {
     margin-left: 5%;
     color: black;
-    white-space: nowrap;
-}
 
-#name {
     cursor: pointer;
 }
+
+/* #name h2 {
+    font-family: 'fasthand';
+} */
 
 .nav-tabs {
     display: flex;
@@ -153,7 +181,30 @@ form {
 
 .content-body:not(:first-child) {
     border-radius: 10px;
-    padding: 0px;
+}
+
+
+/* ---------- About Me ---------- */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.skill {
+    width: 33%;
+    text-align: center;
+}
+
+.skill * {
+    margin-bottom: 0.75em;
+}
+
+#bio-pic {
+    float: left;
+    width: 33%;
+    object-fit: cover;
 }
 
 /* ---------- Portfolio and Projects ---------- */
@@ -295,12 +346,24 @@ input {
     position: relative;
 }
 
+#resume-container * {
+    font-family: 'Calibri Light', 'Times New Roman', 'karla';
+}
+
+#resume-container a {
+    color: blue;
+    font-weight: initial;
+    text-decoration: underline;
+}
+
 #resume-button {
     position: absolute;
     top: 1.5em;
     right: 1.5em;
     margin: 0;
     z-index: 1;
+
+    font-family: 'karla';
 }
 
 #resume-button:active {
@@ -323,12 +386,6 @@ input {
 
 .resume-section > div > p {
     margin-left: 1.5em;
-}
-
-.resume-section a {
-    color: blue;
-    font-weight: initial;
-    text-decoration: underline;
 }
 
 #resume-container h1 {

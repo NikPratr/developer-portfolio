@@ -37,7 +37,7 @@ export default function Portfolio() {
           <Project
           title='ORM Demo'
           picture={ormDemo}
-          description='This is an ORM structure that you may find in an e-commerce site. It uses Sequal DB, class models to create and seed tables, and CRUD operations to manipulate data. The tech used in this project includes dotenv, express, mysql2, and sequalize.'
+          description='This is an ORM structure that you may find in an e-commerce site. It uses Sequel DB, class models to create and seed tables, and CRUD operations to manipulate data. The tech used in this project includes dotenv, express, mysql2, and sequelize.'
           github='https://github.com/NikPratr/orm-back-end-demonstration'
           id={4}
           />

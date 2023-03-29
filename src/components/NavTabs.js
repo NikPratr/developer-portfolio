@@ -6,7 +6,10 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div id='nav'>
       <div id='name'>
-        <h2 onClick={() => handlePageChange('About')}>Nick Prater</h2>
+        <h2 onClick={() => {
+          handlePageChange('About');
+          window.location.href = '#about';
+        }}>Nick Prater</h2>
       </div>
       <ul className="nav-tabs">
         <li
@@ -28,12 +31,6 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
 
         <li
-          onClick={() => { window.location.href = 'mailto:NikPratr@Gmail.com'; }}
-          className="nav-item">
-          <a>Contact</a>
-        </li>
-
-        <li
           onClick={() => {
             handlePageChange('Resume');
             window.location.href = '#resume';
@@ -42,6 +39,12 @@ function NavTabs({ currentPage, handlePageChange }) {
           <a className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
             Resume
           </a>
+        </li>
+
+        <li
+          onClick={() => { window.location.href = 'mailto:NikPratr@Gmail.com'; }}
+          className="nav-item">
+          <a>Contact</a>
         </li>
       </ul>
     </div>
