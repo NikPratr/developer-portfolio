@@ -31,7 +31,7 @@ button {
 
     border-radius: 5px;
     border: none;
-    box-shadow: 0 10px 6px 0 lightgray;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2);
 
     cursor: pointer;
 }
@@ -52,35 +52,35 @@ a {
 
 h1 {
     margin: 0;
-    
+
     font-family: 'comfortaa';
     font-size: 45px;
 }
 
 h2 {
     margin: 0;
-    
+
     font-family: 'comfortaa';
     font-size: 32px;
 }
 
 h3 {
     margin: 0;
-    
+
     font-family: 'comfortaa';
     font-size: 24px;
 }
 
 h4 {
     margin: 0;
-    
+
     font-family: 'karla';
     font-size: 18px;
 }
 
 p {
     margin: 0;
-    
+
     font-family: 'karla';
 }
 
@@ -93,54 +93,48 @@ form {
 
 #nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
     height: 100px;
     background-color: var(--Primary);
 
-    box-shadow: 0 10px 6px 0 lightgray;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 #name {
-    margin-left: 5%;
-    color: black;
+    padding-top: 15px;
+    box-sizing: border-box;
+    height: 60%;
+}
 
+#name h2 {
     cursor: pointer;
 }
 
-/* #name h2 {
-    font-family: 'fasthand';
-} */
-
 .nav-tabs {
     display: flex;
+    justify-content: space-between;
+    margin: 0;
 
-    align-items: flex-end;
-    margin-right: 5%;
-
-    height: 100%;
+    padding: 0;
+    height: 40%;
+    width: 90%;
 }
 
 .nav-item {
     display: flex;
-    padding: 0 35px 0 35px;
-
-    height: 35%;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    cursor: pointer;
+    height: 100%;
+    width: 25%;
 }
 
 .nav-item:has(.active) {
     box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-
-.nav-item:hover {
-    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
-}
-
 
 /* ---------- Page CSS ---------- */
 
@@ -153,7 +147,7 @@ form {
     width: 92%;
     color: white;
     background: var(--Secondary);
-    
+
     border-radius: 5px 0 0 5px;
 }
 
@@ -171,11 +165,11 @@ form {
     height: fit-content;
     background-color: whitesmoke;
 
-    box-shadow: inset 0 10px 6px 0 lightgray;
     border-radius: 0 0 10px 10px;
+    box-shadow: inset 0 10px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-.content-body > p {
+.content-body>p {
     text-indent: 1.5em;
 }
 
@@ -211,39 +205,39 @@ form {
 
 #portfolio-projects {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     row-gap: 1.5em;
-    justify-content: space-around;
 }
 
 .project-container {
     display: flex;
-    justify-content: left;
-    align-content: center;
+    flex-direction: column;
 
-    height: 200px;
+    min-height: 300px;
+    height: fit-content;
     width: 450px;
     background-color: white;
 
     border-radius: 10px;
-    box-shadow: 0 10px 6px 0 lightgray;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 .project-image-container {
-    height: 100%;
-    width: 40%;
+    height: 50%;
+    width: 100%;
     overflow: hidden;
 
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .project-image {
-    height: 100%;
+    height: 200px;
     width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
-    
-    border-radius: 10px 0 0 10px;
+
+    border-radius: 10px 10px 0 0;
 
     transition: 0.25s;
 }
@@ -251,23 +245,36 @@ form {
 .project-info {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
     padding: 0.5em;
-    height: 100%;
-    width: 60%;
     box-sizing: border-box;
+    width: 100%;
 
     border-radius: 0 10px 10px 0;
 }
 
 .project-info p {
     text-indent: 1.5em;
-    margin-top: 0.25em;
+    margin: 0.25em 0 0.25em 0;
 }
 
 .project-links {
-    margin-top: auto;
+    position: relative;
     display: flex;
     justify-content: space-around;
+    margin: 0.75em 0 0.5em 0;
+}
+
+.project-links::before {
+    display: block;
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.25);
 }
 
 /* ---------- Contact ---------- */
@@ -280,13 +287,13 @@ form {
 .form-container {
     display: flex;
     margin-bottom: 1.5em;
-    
+
     height: 25px;
     width: 300px;
     background-color: white;
 
     border-radius: 5px;
-    box-shadow: 0 10px 6px 0 lightgray;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 label {
@@ -314,9 +321,9 @@ input {
     width: 100%;
     height: 150px;
     background-color: white;
-    
+
     border-radius: 5px;
-    box-shadow: 0 10px 6px 0 lightgray;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
 #message-label {
@@ -358,8 +365,9 @@ input {
 
 #resume-button {
     position: absolute;
-    top: 1.5em;
+    top: -25px;
     right: 1.5em;
+    transform: translateY(-75%);
     margin: 0;
     z-index: 1;
 
@@ -372,20 +380,25 @@ input {
 
 .resume-section {
     display: flex;
+    flex-direction: column;
     margin-top: 3px;
+
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
 }
 
 .resume-section > h3 {
     height: 100%;
-    width: 120px;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
 .resume-section > div {
-    width: calc(100% - 120px);
+    width: 100%;
 }
 
 .resume-section > div > p {
-    margin-left: 1.5em;
+    margin-left: 1em;
 }
 
 #resume-container h1 {
@@ -462,7 +475,7 @@ input {
     height: fit-content;
     width: 350px;
     background-color: whitesmoke;
-    box-shadow: inset 2px 5px 3px 0 lightgray;
+    box-shadow: inset 2px 5px 3px 0 rgba(0, 0, 0, 0.2);
 
     border-radius: 100px;
 }
@@ -474,9 +487,9 @@ input {
 #github {
     height: 75px;
     background-color: whitesmoke;
-    
+
     border-radius: 50%;
-    
+
     transition: 0.15s ease-in-out;
 }
 
@@ -488,13 +501,171 @@ input {
 #linkedin {
     height: 75px;
     background-color: whitesmoke;
-    
+
     border-radius: 50%;
-    
+
     transition: 0.15s ease-in-out;
 }
 
 #linkedin:hover {
     filter: invert(1);
     cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+    /* ---------- Portfolio and Projects ---------- */
+
+    #portfolio-projects {
+        row-gap: 2em;
+    }
+    
+    .project-container {
+        flex-direction: row;
+    
+        min-height: 250px;
+        height: unset;
+        max-height: fit-content;
+        width: calc(100% - 2em);
+    }
+    
+    .project-image-container {
+        height: 100%;
+        width: 40%;
+    
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .project-image {
+        min-height: 100%;
+        max-height: 100%;
+    
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .project-info {
+        justify-content: unset;
+    
+        height: 100%;
+        width: 60%;
+    }
+    
+    .project-links {
+        position: unset;
+        margin: auto 0 0.5em 0;
+    }
+
+    /* ---------- Resume ---------- */
+    
+    #resume-button {
+        position: absolute;
+        top: 1.5em;
+        right: 1.5em;
+        transform: none;
+    }
+    
+    .resume-section {
+        display: flex;
+        flex-direction: row;
+
+        border: none;
+        border-radius: none;
+    }
+    
+    .resume-section > h3 {
+        width: 120px;
+        margin: 0;
+    }
+    
+    .resume-section > div {
+        width: calc(100% - 120px);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        height: 100px;
+        background-color: var(--Primary);
+    
+        box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    #name {
+        display: flex;
+        align-items: center;
+        margin: 0;
+
+        padding: 0 0 0 5%;
+        box-sizing: border-box;
+        height: 100%;
+        width: 40%;
+    }
+    
+    .nav-tabs {
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-end;
+        margin: 0;
+    
+        padding: 0;
+        height: 40%;
+        width: 60%;
+    }
+    
+    .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        height: 100%;
+        width: 25%;
+    }
+    
+    .nav-item:has(.active) {
+        box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #portfolio-projects {
+        row-gap: 2.5em;
+    }
+    
+    .project-container {
+        flex-direction: row;
+    
+        min-height: 250px;
+        height: unset;
+        max-height: fit-content;
+        width: calc(50% - 2.5em);
+    }
+    
+    .project-image-container {
+        height: 100%;
+        width: 40%;
+    
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .project-image {
+        min-height: 100%;
+        max-height: 100%;
+    
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .project-info {
+        justify-content: unset;
+    
+        height: 100%;
+        width: 60%;
+    }
+    
+    .project-links {
+        position: unset;
+        margin: auto 0 0.5em 0;
+    }
 }

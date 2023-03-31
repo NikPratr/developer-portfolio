@@ -50,6 +50,7 @@ const Project = ({ title, picture, description, github, deployment, id }) => {
             <div className="project-info">
                 <h3 className='project-title-inside'>{title}</h3>
                 <p>{description}</p>
+                
                 <div className="project-links">
                     {github ? <a className='project-link' href={github} target='_blank'>Github</a> : ''}
                     {deployment ? <a className='project-link' href={deployment} target='_blank'>Deployment</a> : ''}
