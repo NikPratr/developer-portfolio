@@ -613,6 +613,8 @@ input {
         padding: 0;
         height: 40%;
         width: 60%;
+
+        cursor: pointer;
     }
     
     .nav-item {
