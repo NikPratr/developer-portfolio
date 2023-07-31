@@ -15,7 +15,7 @@ export default function Resume() {
     <div>
       <div id='resume-container' className='content-body'>
         <button id='resume-button' onClick={downloadResume}>Download Resume</button>
-        
+
         <h1>Nicholas Prater</h1>
         <br />
 
@@ -31,10 +31,10 @@ export default function Resume() {
         </p>
         <br />
 
-        <p style={{textIndent: '0px'}}>Github: <a href='https://github.com/NikPratr'>https://github.com/NikPratr</a></p>
-        <p style={{textIndent: '0px'}}>LinkIn: <a href='https://www.linkedin.com/in/nick-prater-62b38b246'>https://www.linkedin.com/in/nick-prater-62b38b246</a></p>
+        <p style={{ textIndent: '0px' }}>Github: <a href='https://github.com/NikPratr'>https://github.com/NikPratr</a></p>
+        <p style={{ textIndent: '0px' }}>LinkIn: <a href='https://www.linkedin.com/in/nick-prater-62b38b246'>https://www.linkedin.com/in/nick-prater-62b38b246</a></p>
         <br />
-        
+
         <h2>Education</h2>
 
         <div className='resume-section'>
@@ -139,6 +139,17 @@ export default function Resume() {
         <br />
 
         <h2>Job History</h2>
+
+        <div className='resume-section'>
+          <h3>2023 - Present</h3>
+
+          <div>
+            <h3>Intern:</h3>
+            <h4>Edaptive Computing Inc., Dayton, OH</h4>
+            <p>Worked in full capacity as a developer with help from a senior development team. Worked on and managed a large React application utilizing tech such as Typescript, Docker, MySQL, and other libraries/plugins.</p>
+          </div>
+        </div>
+        <br />
 
         <div className='resume-section'>
           <h3>2023 - Present</h3>
