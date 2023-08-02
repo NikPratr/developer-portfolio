@@ -145,19 +145,8 @@ export default function Resume() {
 
           <div>
             <h3>Intern:</h3>
-            <h4>Edaptive Computing Inc., Dayton, OH</h4>
+            <h4>Edaptive Computing, Dayton, OH</h4>
             <p>Worked in full capacity as a developer with help from a senior development team. Worked on and managed a large React application utilizing tech such as Typescript, Docker, MySQL, and other libraries/plugins.</p>
-          </div>
-        </div>
-        <br />
-
-        <div className='resume-section'>
-          <h3>2023 - Present</h3>
-
-          <div>
-            <h3>Freelance Software Developer:</h3>
-            <h4>West Chester, OH</h4>
-            <p>Taking on projects for others to further my technical skills while searching for full-time work</p>
           </div>
         </div>
         <br />
