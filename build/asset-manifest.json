@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/developer-portfolio/static/css/main.4a491ab2.css",
+    "main.js": "/developer-portfolio/static/js/main.935f2029.js",
+    "static/media/bb-plaza.png": "/developer-portfolio/static/media/bb-plaza.bc1aa5844a1e6d36dc75.png",
+    "static/media/nick.png": "/developer-portfolio/static/media/nick.356eaa7acb9ff0731244.png",
+    "static/media/fasthand.ttf": "/developer-portfolio/static/media/fasthand.83ad7a92c1580f6e78b8.ttf",
+    "static/media/comfortaa.ttf": "/developer-portfolio/static/media/comfortaa.4d2ab5de91c4d193a69f.ttf",
+    "static/media/nick-full.jpg": "/developer-portfolio/static/media/nick-full.93b08e3ffcb172c3eb94.jpg",
+    "static/media/resume.pdf": "/developer-portfolio/static/media/resume.aa6aac9228557fa4b731.pdf",
+    "static/media/karla.ttf": "/developer-portfolio/static/media/karla.e7cdc609f35daffcb788.ttf",
+    "static/media/character-cards.png": "/developer-portfolio/static/media/character-cards.d01cdaa1814bc670ed6e.png",
+    "static/media/orm-demonstration.png": "/developer-portfolio/static/media/orm-demonstration.4ab67596ef389a710f69.png",
+    "static/media/social-media-project1.png": "/developer-portfolio/static/media/social-media-project1.16e2b4dcc62b1e710a46.png",
+    "index.html": "/developer-portfolio/index.html",
+    "main.4a491ab2.css.map": "/developer-portfolio/static/css/main.4a491ab2.css.map",
+    "main.935f2029.js.map": "/developer-portfolio/static/js/main.935f2029.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a491ab2.css",
+    "static/js/main.935f2029.js"
+  ]
+}
