@@ -44,7 +44,7 @@ export default function Portfolio() {
           <Project
           title='BB Plaza'
           picture={bbPlaza}
-          description='This is a social media site for built around sharing art. It is currently unfinished, but features the ability to sign up and login and store session data. It was built using React, React Router, GraphQL, and more front end and backend tech.'
+          description='This is an art social media demo that was created during my time in coding bootcamp. It remains unfinished, but I designed the homepage and logo, and it features the ability to log in/log out. It was built using React, React Router, GraphQL, and more front end and backend tech.'
           github='https://github.com/DVidal1209/art-museum'
           deployment={'https://protected-shore-90563.herokuapp.com/'}
           id={5}

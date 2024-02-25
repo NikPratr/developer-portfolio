@@ -36,17 +36,17 @@ export default function PortfolioContainer() {
         </div>
       )
     }
-    // if (currentPage === 'Portfolio') {
-    //   return (
-    //     <div>
-    //       <Header
-    //       title={currentPage}
-    //       picture={false}/>
-    //       <Portfolio />
-    //       <Footer />
-    //     </div>
-    //   )
-    // }
+    if (currentPage === 'Portfolio') {
+      return (
+        <div>
+          <Header
+          title={currentPage}
+          picture={false}/>
+          <Portfolio />
+          <Footer />
+        </div>
+      )
+    }
     return (
       <div>
         <Header
