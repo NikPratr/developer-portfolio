@@ -5,16 +5,7 @@ export default function About() {
   return (
     <div>
       <div className='content-body'>
-        {/* <img id='bio-pic' src={picture}/> */}
-        <p>Full Stack Flex Web Developer combining an extensive background in psychology with a passion for coding and software development; uses those skills to create a seamless communicative connection between intuitive and eye-catching webpages and efficient server-side data structures. Spent 5 years at Wright State University while working on and off campus and doing volunteer-work to earn a bachelor’s in psychology. Worked through pre-med program and developed a strong work ethic, good communication skills and problem-solving abilities. Achieved several deans’ listings and earned a spot in Psi Chi, the national honors association in psychology. Afterward, decided to pursue a degree at Case Western Reserve University in coding to develop skills in HTML, CSS, Javascript, and many associated runtimes, extensions, and libraries. Known as a creative problem-solver a dedicated and detail-oriented worker excited to take on new professional projects.</p>
-
-        {/* <p>In 2020, I graduated from Wright State University with a Bachelor of Science. I majored in Psychology with a specialization in Behavioral Neuroscience. I planned on attending medical school, but as I got closer to it, began working more closely with doctors and the medical staff, and got a better feel for what my day-to-day life would be like as a doctor, I began to feel like it may not be the right path for me.</p>
-        <br />
-
-        <p>In 2023, I receieved a certificate in Full Stack Flex Web Development. I am still new, but I'm very happy that I made the change. I really enjoy UI/UX work and front end development but, as a full stack developer, I am comfortable with back end development as well.</p>
-        <br />
-        
-        <p>Today, I am working at Fedex as a courier while doing freelance coding in my free time. I am heavily involved in creative projects outside of coding; I am playing the piano and working on a creative writing project, but my biggest focus currently is the coding projects left over from the bootcamp, development projects for other people, and of course my own personal coding projects, some of which can be found in my portfolio section!</p> */}
+        <p>Hey there. I'm a full stack engineer working at Edaptive Computing Inc. I have a background in psychology, and am certified in full stack web development by Case Western Reserve Uninversity. In 2022 and 2023 I spent a lot of time working on projects as freelance web developer. During that time, I made a variety of responsive web apps that are both fun to look at and intuitive to use. Currently, I am working at Edaptive Computing Inc., where I write and manage large React applications for use by customers and libraries for use by other development teams. The tech I'm working most closely with includes React, Typescript, MySQL, and NestJS, but I have worked on others, mentioned below. As a full stack engineer, I keep up to date on tech both front end and back end, and am always looking for ways to improve my skills.</p>  
       </div>
 
       <div className='content-body'>
@@ -38,20 +29,19 @@ export default function About() {
             <h4>Back-End</h4>
             <p>Node.js</p>
             <p>Express.js</p>
+            <p>Docker</p>
             <p>MySQL</p>
-            <p>Sequelize</p>
             <p>MongoDB</p>
             <p>Mongoose</p>
+            <p>Sequelize</p>
           </div>
 
           <div className='skill'>
             <h4>General Skills</h4>
-            <p>MVC</p>
-            <p>ORM</p>
-            <p>OOP</p>
-            <p>Git Version Control</p>
-            <p>Advanced use of Google keywords for search</p>
-            <p>Use of AI search engines e.g., ChatGPT</p>
+            <p>MVC, ORM, OOP, use of Github and Azure for git version control</p>
+            <p>Testing and QA tech such as Jest and React Testing Library</p>
+            <p>UI/UX prototyping and QA using interfacing tools like Figma</p>
+            <p>Resolution of security vulnerabilities guided by OWASP e.g., SQL injection, XSS, etc.</p>
           </div>
         </div>
       </div>
@@ -59,7 +49,7 @@ export default function About() {
       <div className='content-body'>
         <div style={{width: '100%'}}>
           <h5 style={{display: 'inline'}}>Email: </h5>
-          <a href='mailto:NikPratr@Gmail.com'>NikPratr@Gmail.com</a>
+          <a href='mailto:Nicholas.R.Prater@Gmail.com'>Nicholas.R.Prater@Gmail.com</a>
         </div>
         
         <div>

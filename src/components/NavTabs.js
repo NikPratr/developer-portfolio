@@ -21,14 +21,14 @@ function NavTabs({ currentPage, handlePageChange }) {
           <a className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>About</a>
         </li>
 
-        <li
+        {/* <li
           onClick={() => {
             handlePageChange('Portfolio');
             window.location.href = '#portfolio';
           }}
           className="nav-item">
           <a className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>Portfolio</a>
-        </li>
+        </li> */}
 
         <li
           onClick={() => {
@@ -42,7 +42,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </li>
 
         <li
-          onClick={() => { window.location.href = 'mailto:NikPratr@Gmail.com'; }}
+          onClick={() => { window.location.href = 'mailto:Nicholas.R.Prater@Gmail.com'; }}
           className="nav-item">
           <a>Contact</a>
         </li>
