@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/developer-portfolio/static/css/main.4a491ab2.css",
-    "main.js": "/developer-portfolio/static/js/main.70988f3a.js",
-    "static/media/bb-plaza.png": "/developer-portfolio/static/media/bb-plaza.bc1aa5844a1e6d36dc75.png",
+    "main.js": "/developer-portfolio/static/js/main.62cf605c.js",
     "static/media/nick.png": "/developer-portfolio/static/media/nick.356eaa7acb9ff0731244.png",
+    "static/media/music-website-image.png": "/developer-portfolio/static/media/music-website-image.328f2cfa73ccb2fefd5e.png",
     "static/media/fasthand.ttf": "/developer-portfolio/static/media/fasthand.83ad7a92c1580f6e78b8.ttf",
     "static/media/comfortaa.ttf": "/developer-portfolio/static/media/comfortaa.4d2ab5de91c4d193a69f.ttf",
     "static/media/nick-full.jpg": "/developer-portfolio/static/media/nick-full.93b08e3ffcb172c3eb94.jpg",
@@ -14,10 +14,10 @@
     "static/media/social-media-project1.png": "/developer-portfolio/static/media/social-media-project1.16e2b4dcc62b1e710a46.png",
     "index.html": "/developer-portfolio/index.html",
     "main.4a491ab2.css.map": "/developer-portfolio/static/css/main.4a491ab2.css.map",
-    "main.70988f3a.js.map": "/developer-portfolio/static/js/main.70988f3a.js.map"
+    "main.62cf605c.js.map": "/developer-portfolio/static/js/main.62cf605c.js.map"
   },
   "entrypoints": [
     "static/css/main.4a491ab2.css",
-    "static/js/main.70988f3a.js"
+    "static/js/main.62cf605c.js"
   ]
 }
